@@ -1,21 +1,29 @@
-pipeline {
+pipeline
+{
   agent any
-
-  stages {
-    stage("One") {
-      steps {
-        echo "Hello"
+  
+    stages
+  {
+    stage("step1")
+    {
+      steps
+      {
+        echo "hello"
+        
       }
-    }
-    stage("Evaluate Master") {
-      when {
-        // skip this stage unless on Master branch
-        branch "test1"
+    }   
+     stage("2")
+    {
+      when{
+        branch "master"
       }
-      steps {
-        echo "World"
-        echo "Heal it"
+      steps
+      {
+        echo "in condi"
       }
     }
   }
 }
+          
+      
+    
