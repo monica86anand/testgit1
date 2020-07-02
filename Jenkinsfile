@@ -10,7 +10,7 @@ pipeline {
     stage("Evaluate Master") {
       when {
         // skip this stage unless on Master branch
-        branch "master"
+        branch "test1"
       }
       steps {
         echo "World"
