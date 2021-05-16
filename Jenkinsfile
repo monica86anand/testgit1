@@ -13,6 +13,7 @@ pipeline {
         branch "master"
       }
       steps {
+        echo "branch master"
         echo "World"
         echo "Heal it"
       }
